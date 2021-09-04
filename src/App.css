@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: #ffffff00;
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(51, 33, 33) #000;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 33, 33);
+  border-radius: 15px;
+  border: 3px solid rgb(51, 33, 33);
+}
+
+
+
+
+
+
+
+
+body{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/********************* NAVBAR ************************************/
+nav{
+  z-index: 2;
+  height: 80px;
+}
+.logo{
+  width: 5rem;
+}
+
+
+
+/************ MENU LINKS **********/
+nav a.nav-link{
+  font-size: .8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a{
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+@media(max-width: 768px){
+  .navbar-brand{
+    width: 7rem;
+  }
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+  border-top: 0.1875rem solid var(--primary-orange);
+
+}
+
+.navbar-nav > li > a:hover{
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+
+/**************************** HEADER ******************************************/
+.header-wraper{
+  position: relative;
+  background-color: rgb(51, 33, 33);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+}
+
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+.main-info h1 span{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+/*-------------------- TYPED TEXT --------------------------*/
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media(max-width: 768px){
+  .main-info h1{
+    font-size: 1.7rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+}
+
+/*-------------------- HEADER MAIN OFFER BUTTON --------------------------*/
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none; 
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+/*------- particle js -------*/
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px){
+  .particles-canvas{
+    display: none;
+  }
+}
+
+
+/*--------------------------ABOUT-------------------------------*/
+
+.bo{
+  background-color: rgb(0, 0, 0);
+}
+
+.container h1 {
+	color: var(--primary-orange); 
+  display: block;
+  text-align: center;
+  padding: 35px;
+  padding-bottom: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+  border-bottom: 2px solid #ffffff;
+}
+
+
+p{
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 150%;
+  font-size: 17px;
+  display: box;
+  padding: 20px;
+  padding-left: 10px;
+  color: white;
+}
+
+.box{
+  display: flex;
+	flex-direction: row;
+}
+
+
+
+/*ABOUT ME*/
+
+.about-me{
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  padding-left: 0px; 
+}
+
+.ab-item1{
+  display: block;
+  padding: 30px;
+  margin-top: 4px; 
+}
+
+.resume{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+  background-color: transparent;
+  
+}
+
+.resume:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+
+/* -----------   SKILLS  ------------    */
+
+
+.progressBar{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.progressBar h2{
+  color: white;
+  margin-left: 80px;
+  margin-bottom: 25px;
+}
+
+.one{
+  margin-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.two{
+  margin-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.three{
+  margin-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 70px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/*---------------SERVICES-----------------*/
+
+
+.services-sec{
+  background-color: purple;
+  height: 600px;
+}
+
+.cont h1{
+  color: var(--primary-orange); 
+  display: block;
+  text-align: center;
+  width: 1150px;
+  padding: 35px;
+  margin-left: 60px;
+  padding-bottom: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+  border-bottom: 2px solid #ffffff;
+}
+
+.contain{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.contain .card{
+  position: relative;
+  width: 350px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.contain .card .content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.contain .card:hover .content{
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.contain .card .content .imgBx{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  overflow: hidden;
+ 
+  
+}
+
+.contain .card .content .imgBx .img{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  color: white;
+}
+
+.contain .card .content .contentBx h3{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.contain .card .content .contentBx h3 span{
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+/*-------------------PORTFOLIO--------------------------*/
+.port-sec{
+  background-color: blueviolet;
+  height: 1170px;
+}
+
+
+.conta{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.conta .cardy{
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.conta .cardy .conte .ima{
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+ 
+}
+
+.conta .cardy .conte .ima .imo{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  color: white;
+}
+.conta .cardy .boxx{
+  display: block;
+  height: 120px;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+  
+}
+
+.conte h3{
+  text-align: center;
+  color: white;
+}
+
+.conta a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.conta a:hover{
+  color: inherit;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: rgb(165, 69, 255);
+}
+
+
+/*----------------------CONTACT-------------------*/
+
+.contact-sec{
+  background-color: black;
+  color: white;
+  height: 550px;
+}
+
+.common{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name{
+  display: block;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+.email{
+  display: block;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+.msg{
+  display: block;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+.but{
+  display: block;
+  margin-left: 70px;
+  background-color: transparent;
+  color: white;
+  width: 100px;
+  border-color: white;
+  text-transform: uppercase;
+}
+
+.but:focus{
+  background-color: purple;
+}
+
+.mes{
+  display: block;
+  margin-bottom: 30px;
+}
+
+.input{
+  width: 1000px;
+  margin-left: 10px;
+  background-color: black;
+  border-bottom-color: red !important;
+  border-color: black;
+  color: white;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.email_input{
+  width: 1000px;
+  margin-left: 10px;
+  background-color: black;
+  border-bottom-color: red !important;
+  border-color: black;
+  color: white;
+}
+
+.email_input:focus{
+  outline: none;
+}
+
+.msg_input{
+  width: 400px;
+  height: 150px;
+  background-color: black;
+  border-color: red;
+  color: white;
+}
+
+.msg_input:focus{
+  outline: none;
+}
