@@ -201,7 +201,7 @@ nav ul li{
   align-items: center;
   font-family: "Roboto Condensed", sans-serif;
   z-index: 1;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
 }
 
 
@@ -222,6 +222,20 @@ p{
 
 
 
+@media(max-width: 768px){
+  p{
+    width: 450px;
+    padding-left: 0px;
+  }
+  .box{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+
+
 /*ABOUT ME*/
 
 .about-me{
@@ -231,6 +245,12 @@ p{
   justify-content: space-between;
   width: 750px;
   padding-left: 0px; 
+}
+
+@media(max-width: 768px){
+  .about-me{
+    width: 500px;
+  }
 }
 
 .ab-item1{
@@ -276,6 +296,7 @@ p{
   margin-bottom: 25px;
 }
 
+
 .one{
   margin-bottom: 20px;
   margin-left: 80px;
@@ -304,6 +325,24 @@ p{
 }
 
 
+
+@media(max-width: 768px){
+  .one{
+    flex-direction: column;
+    width: 600px;
+  }
+  .two{
+    flex-direction: column;
+    width: 600px;
+  }
+  .three{
+    flex-direction: column;
+    width: 600px;
+  }
+  .lam{
+    flex-direction: row;
+  }
+}
 /*---------------SERVICES-----------------*/
 
 
@@ -316,16 +355,14 @@ p{
   color: var(--primary-orange); 
   display: block;
   text-align: center;
-  width: 1150px;
   padding: 35px;
-  margin-left: 60px;
   padding-bottom: 5px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Roboto Condensed", sans-serif;
   z-index: 1;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid green;
 }
 
 .contain{
@@ -404,6 +441,19 @@ p{
   text-transform: initial;
 }
 
+@media(max-width: 768px){
+  .contain .card{
+    width: 200px;
+    height: 120px;
+  }
+  .contain .card .content .imgBx{
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+}
+
 /*-------------------PORTFOLIO--------------------------*/
 .port-sec{
   background-color: blueviolet;
@@ -478,6 +528,23 @@ p{
   background-color: rgb(165, 69, 255);
 }
 
+@media(max-width: 768px){
+  .conta .cardy{
+    width: 150px;
+    height: 250px;
+  }
+  .conta .cardy .conte .ima{
+    width: 100px;
+    height: 50px;
+  }
+  
+  .conta .cardy .boxx{
+    height: 20px;
+  }
+  .conte h3{
+    font-size: 20px;
+  }
+}
 
 /*----------------------CONTACT-------------------*/
 
@@ -520,7 +587,7 @@ p{
 }
 
 .but:focus{
-  background-color: purple;
+  background-color: var(--primary-orange);
 }
 
 .mes{
@@ -564,4 +631,16 @@ p{
 
 .msg_input:focus{
   outline: none;
+}
+
+@media(max-width: 768px){
+  .contact-sec{
+    height: 570px;
+  }
+  .input{
+    width: 400px;
+  }
+  .email_input{
+    width: 400px;
+  }
 }

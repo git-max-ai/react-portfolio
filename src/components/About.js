@@ -12,7 +12,9 @@ class About extends Component {
         <div className="container">
         <h1>ABOUT ME</h1>
         <div className="box">
-            
+        <div>
+                <img src={logo} style={{ width: "15rem", height:"17rem" }} alt="image" />
+            </div>
             <p>
                 I'm currently studying Software Engineering at K. R. Mangalam University having just completed my 1st year. I'm a hardworking person who is always willing to learn and grow. A person who seeks to develop skills and deliver the best version of herself. Creative, resourceful, flexible and able to adapt to changing priorities. A polite person having great communication skills and strong work ethics.
                 
@@ -75,9 +77,7 @@ class About extends Component {
         <button className="resume">Download Resume</button>
 
                 </p>
-            <div>
-                <img src={logo} style={{ width: "20rem", height:"17rem" }} alt="image" />
-            </div>
+           
         </div>
         </div>
 
